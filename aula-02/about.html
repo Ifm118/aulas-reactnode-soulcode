@@ -6,6 +6,62 @@
     <title>Sobre</title>
 </head>
 <body>
-    <h1>Página Sobre</h1>
+   
+    <h1>Brincando a Tabela</h1>
+    <table border="1" style="border-collapse:collapse"><!--  inicio tabela -->
+   <thead> <!-- colunas dos cabeçalhos -->
+  
+    <tr>
+         <!-- cabeçalho 1  -->
+       <th>Produto</th>
+       <th>Categoria</th>
+         <!-- cabeçalho 2 -->
+       <th>Preço</th>
+       <th>Disponibilidade</th>
+    </tr>
+    </thead>
+    <!--inicia o conteudo pelo tbody  -->
+  <tbody>
+    <!-- primeiro agrupamento -->
+    <tr>
+        <!-- segunda linha da tabela( primeira linha é como se fosse do cabeçalo anterior(produto)(preço)) -->
+        
+         <!-- linha 1.1 -->
+        <td>Maça Verde</td>
+
+        <!-- categoria de frutas ocupa 2 linhas -->
+        <td rowspan="2">Frutas</td> 
+
+        <!-- linha 2.1 -->
+        <td>R$ 13,00</td>
+<td>Disponivel</td>
+    </tr>
+  <!-- segundo agrupamento -->
+<tr>
+    <td>banana</td>
+    <td> R$ 7,50</td>
+    <td>Disponível</td>
+</tr>
+
+    <tr>
+        <!-- linha 1.2 -->
+        <td>Creme Dental</td>
+        <!-- categoria e preço unidos em unica celula -->
+        <td colspan="2"> Higiene Pessoal</td>
+        <!-- linha 2.1 -->
+        <td>Disponível</td>
+    </tr>
+</tbody>
+<!-- linha agrupada final da tabela -->
+<tfoot>
+    <!-- terceiro agrupamento -->
+    <tr>
+        <td colspan="4">Preços sujeitos a alteração</td>
+    </tr>
+
+
+</tfoot>
+<!-- fim da tabela -->
+    </table>
 </body>
 </html>

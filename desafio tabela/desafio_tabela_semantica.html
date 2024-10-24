@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da tabela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 30px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #eee;
+            display: flex; /* Torna o menu horizontal */
+            justify-content: space-around; /* Distribui os itens com espaço ao redor */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinha os itens horizontalmente */
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        main {
+            background-color: #fafafa;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .content-wrapper {
+            display: flex;
+        }
+        section {
+            flex: 2;
+            margin-right: 10px;
+        }
+        nav {
+            flex: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+<header>
+    <h1>Tabela do desafio</h1>
+    <p>Desafio da tabela do bootcamp OLX com estilização com arquitetura do website</p>
+</header>    
+
+<div class="content-wrapper">
+    <nav>
+        <h2>Tabelas</h2>
+        <ul>
+            <li><a href="tabela_hard_skills.html">Hard Skills</a></li>
+            <li><a href="#">Brasileirão</a></li>
+            <li><a href="#">Formula 1</a></li>
+            <li><a href="#">Avaliação</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Seja Bem-vindo</h2>
+            <article>
+                <h3>Descrição</h3>
+                <p>Esse site foi criado para mostrar as tabelas com html e css com design minimalista.</p>
+            </article>
+            <article>
+                <h3>Objetivo</h3>
+                <p>O objetivo é mostrar as funcionalidades pela navegação nas abas de cada tabelas com links externos para mostrar cada tabelas de forma completa.</p>
+            </article>
+        </section>
+    </main>
+</div>
+<footer>@2024 Meu website. Todos os direitos reservados.<p></p></footer>
+</body>
+</html>

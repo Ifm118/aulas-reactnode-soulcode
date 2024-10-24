@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela hard skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid lightblue;
+        }
+        header {
+            background-color: blue;
+        }
+        nav {
+            background-color: red;
+            display: flex; /* Torna o menu horizontal */
+            justify-content: space-around; /* Distribui os itens com espaço ao redor */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinha os itens horizontalmente */
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        main {
+            background-color: #fafafa;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .content-wrapper {
+            display: flex;
+        }
+        section {
+            flex: 2;
+            margin-right: 10px;
+        }
+        nav {
+            flex: 1;
+        }
+        table{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <header>
+        <nav>
+            <h2>Tabelas</h2>
+            <ul>
+                <li><a href="desafio_tabela_semantica.html">Voltar</a></li>
+                <li><a href="#">Brasileirão</a></li>
+                <li><a href="#">Formula 1</a></li>
+                <li><a href="#">Avaliação</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <body>
+    
+    <div class="content-wrapper">
+       
+        <table border="1" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <td colspan="3"> <center><strong><h2>TABELAS HARD SKILLS</h2></strong></center></td>
+                </tr>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Curso</th>
+                    <th>Habilidades Técnicas</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João da Silva</td>
+                    <td>Engenharia de Software</td>
+                    <td>Programação em Java, Redes de Computadores</td>
+                   
+                </tr>
+
+                    <td>Maria Oliveira</td>
+                    <td>Ciencia de Computação</td>
+                    <td>Design Gráfico, Desenvolvimento Web</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas Pereira</td>
+                    <td>Análise de Sistemas</td>
+                    <td>Programação em Python, Segurança de informação</td>
+                </tr>
+
+                <tr>
+                    <td>Pedro Gomes</td>
+                    <td>Desenvolvimento Web</td>
+                    <td>HTML, CSS, Javascript</td>
+                </tr>
+                <tr>
+                    <td>Ana Souza</td>
+                    <td>Engenharia de computação</td> 
+                    <td>Eletronica, Microcontroladores</td>
+                </tr>
+    
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="1">CRIADO POR</td>
+                    <td colspan="2"> IGOR FRÓES</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>@2024 Meu website. Todos os direitos reservados.<p></p></footer>
+</head>
+
+    
+</body>
+</html>
