@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Grateful Dead - Loja</title>
+    <link rel="icon" href="logo header.png">
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            background-color: whitesmoke
+             /* Exemplo de fundo para destaque */
+        }
+
+        header img {
+            margin-right: 15px; /* Espaçamento entre a imagem e o título */
+        }
+
+        header h1 {
+            font-size: 25px;
+            margin: 0;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        nav{
+            display: flex;
+            gap: 100px;
+            margin-left: 200px;
+            
+        }
+        nav a {
+                text-decoration: none;
+                color: red;
+                font-size: 20px;
+                padding: 5px 10px;
+        }
+            nav a:hover {
+                background-color: blue;
+                border-radius: 5px;
+        }
+        body{
+            background-color: lightslategrey;
+        }
+                /* Área principal que se expande para ocupar o espaço restante */
+        main {
+            flex: 1; /* Faz o main crescer para ocupar o espaço entre header e footer */
+            padding: 20px;
+            overflow-y: auto; /* Garante rolagem se o conteúdo for maior que a tela */
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<header>
+
+    <p>
+        <img src="logo header.png" height="100" width="100" alt="Logo oficial da banda">
+         <h1>
+            <span style="color: blue;"><strong>Grateful</strong></span> 
+            <span style="color: red;"><strong>Dead</strong></span>
+         </h1>
+    </p>    
+<div class="content-wrapper">     
+ <nav>       
+    <a href="home_GD.html"> <span style="color: red;"> <strong>Home</strong></span> </a>
+    <a href="musicas_GD.html"><span style="color: red;"> <strong>Músicas</strong></span></a>
+    <a href="sobre_GD.htm"><span style="color: red;"><strong>Sobre</strong></span></a>
+ </nav>    
+    </div>    
+</header>
+
+<body>
+ <main>
+    <section>
+
+    </section>
+
+ </main>   
+</body>
+<footer>
+<p>&copy; 2023 Grateful Dead. Todos os direitos reservados.</p>
+</footer>
+</html>

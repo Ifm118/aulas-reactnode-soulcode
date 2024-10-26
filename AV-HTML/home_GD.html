@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="br-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Grateful Dead - Home</title>
+    <link rel="icon" href="logo header.png">
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            background-color: whitesmoke
+             /* Exemplo de fundo para destaque */
+        }
+
+        header img {
+            margin-right: 15px; /* Espaçamento entre a imagem e o título */
+        }
+
+        header h1 {
+            font-size: 25px;
+            margin: 0;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+        nav{
+            display: flex;
+            gap: 100px;
+            margin-left: 200px;
+            
+        }
+        nav a {
+                text-decoration: none;
+                color: red;
+                font-size: 20px;
+                padding: 5px 10px;
+        }
+            nav a:hover {
+                background-color: blue;
+                border-radius: 5px;
+        }
+        body{
+            background-color: lightslategrey;
+            color: whitesmoke;
+        }
+        h1,h2 body {
+            color: whitesmoke;
+        }
+         
+                /* Área principal que se expande para ocupar o espaço restante */
+        main {
+            flex: 1; /* Faz o main crescer para ocupar o espaço entre header e footer */
+            padding: 5px;
+            overflow-y: auto; /* Garante rolagem se o conteúdo for maior que a tela */
+        }
+        #section1{
+            margin-bottom: 50px;
+        }
+        
+        figure img{
+            transition: 0.5s ease;
+            padding: 5px;
+        }
+        figure img:hover{
+            transform: scale(1.8);
+        }
+        /*Centraliza form*/
+        .form-container{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px solid red;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 50px;  
+            background-image: url("backgroundForm.jpg");
+            background-clip: padding-box; /* Limita o fundo ao conteúdo interno */
+            background-size: 80%; /* Ajusta a imagem para caber no contêiner */ 
+        }
+        .form-container label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+         div .GroupNome{
+         margin-top: 50px; 
+         }
+         div .GroupMensagem{
+         margin-bottom: 50px; 
+         }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid blue;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-container .terms {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-weight: normal;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        /* Estilo específico para o botão */
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            height: 30px;
+        }
+    </style>
+</head>
+<header>
+    <img src="logo header.png" height="100" width="100" alt="Logo oficial da banda">
+    <h1>
+        <span style="color: blue;"><strong>Grateful</strong></span> 
+        <span style="color: red;"><strong>Dead</strong></span>
+    </h1>
+        
+<div class="content-wrapper">     
+ <nav>       
+    <a href="loja_GD.html"> <span style="color: red;"> <strong>Loja</strong></span> </a>
+    <a href="musicas_GD.html"><span style="color: red;"> <strong>Músicas</strong></span></a>
+    <a href="sobre_GD.htm"><span style="color: red;"><strong>Sobre</strong></span></a>
+ </nav>    
+    </div>    
+</header>
+
+<body>
+ <main>
+    <section id="section1">
+    <center><h1>Novos Produtos</h1></center>  
+      <div class="content-wrapper">  
+             <figure>
+                <a href="boneBranco.html">
+                 <img src="boneBranco.png" alt="Boné Branco" height="100" width="100"> 
+                 </a>
+                 <figcaption>
+                    <br>
+                   <center>Boné branco</center> 
+                 </figcaption>
+                 </figure>    
+     
+                 <figure>
+                    <a href="casacoAzul.html">
+                    <img src="casacoAzul.png" alt="Casaco Azul" height="100" width="100">
+                    </a>
+                    <br>
+                    <figcaption>
+                        <br>   
+                        <center>Casaco Azul</center> 
+                      </figcaption> 
+
+                </figure>    
+                
+                <figure>
+                    <a href="camisaDead.html">
+                    <img src="camisaPretaEstampaDead.png" alt="Camisa Preta GratefulDead" height="100" width="100">
+                    </a>
+                    <figcaption>
+                        <br>
+                        <center>Camisa Grateful Dead</center> 
+                      </figcaption>
+                </figure>        
+                 <figure>
+                    <a href="camisaSkull.html">
+                    <img src="camisaPretaEstampaSkull.png" alt="Camisa Preta Skull" height="100" width="100"> 
+                    </a>
+                    <figcaption>
+                        <br>
+                        <center>Camisa Skull</center> 
+                      </figcaption>
+                </figure>    
+                <figure>
+                    <a href="packPalheta.html">
+                    <img src="packPalhetaPretaDdario.png" alt="Pack Palheta Preta D'Addario " height="100" width="100"> 
+                    </a>
+                    <figcaption>
+                        <br>
+                        <center>Pack Palheta</center> 
+                      </figcaption>
+                </figure>
+         </div>           
+    </section>
+ <section>
+    <center><h1>Contato sobre Produtos</h1></center>
+   <div class="form-container"> 
+    <form>
+        <div class="GroupNome">
+            <label for="IdNome">Nome:</label>
+            <input value="Igor" type="text" id="IdNome" name="nome" placeholder="Seu nome" required/>
+        </div>
+        <div>
+            <label for="IdEmail">E-mail:</label>
+            <input type="email" id="IdEmail" name="email" placeholder="Seu e-mail" required/>
+        </div>
+        <div class="GroupMensagem">
+            <label for="IdMensagem">Mensagem:</label>
+            <textarea id="IdCaixaMensagem" name="mensagem" placeholder="Digite a sua dúvida sobre o produto e serviço." required></textarea>
+           
+        </div>
+        <div class="terms">
+           <input type="checkbox" id="IdTermos" name="required"/>
+           <label for="IdTermos">Eu aceito os termos e condições</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form> 
+   </div>
+ </section>   
+
+ </main>   
+</body>
+<footer>
+<p>&copy; 2023 Grateful Dead. Todos os direitos reservados.</p>
+</footer>
+</html>
