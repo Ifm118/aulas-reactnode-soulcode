@@ -79,12 +79,29 @@
 
         /* Estilo do rodapé */
         footer {
-            background-color: whitesmoke;
-            color: black;
-            text-align: center;
-            padding: 5px;
-            height: 30px;
-        }
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-content p, .footer-content a {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: red;
+}
     </style>
 </head>
 <header>
@@ -111,7 +128,10 @@
 
  </main>   
 </body>
-<footer>
-<p>&copy; 2023 Grateful Dead. Todos os direitos reservados.</p>
+<footer>  
+    <div class="footer-content">
+        <p><strong>&copy; Grateful Dead. Todos os direitos reservados.</strong></p>
+        <a href="faq_GD.html"><strong>FAQ</strong></a>
+    </div>
 </footer>
 </html>

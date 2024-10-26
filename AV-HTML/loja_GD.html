@@ -66,11 +66,29 @@
 
         /* Estilo do rodapé */
         footer {
-            background-color: whitesmoke;
-            color: black;
-            text-align: center;
-            padding: 10px;
-        }
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-content p, .footer-content a {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: red;
+}
     </style>
 </head>
 <header>
@@ -85,6 +103,7 @@
 <div class="content-wrapper">     
  <nav>       
     <a href="home_GD.html"> <span style="color: red;"> <strong>Home</strong></span> </a>
+    <a href="loja_GD.html"> <span style="color: red;"> <strong>Loja</strong></span> </a>
     <a href="musicas_GD.html"><span style="color: red;"> <strong>Músicas</strong></span></a>
     <a href="sobre_GD.htm"><span style="color: red;"><strong>Sobre</strong></span></a>
  </nav>    
@@ -99,7 +118,10 @@
 
  </main>   
 </body>
-<footer>
-<p>&copy; 2023 Grateful Dead. Todos os direitos reservados.</p>
+<footer>  
+    <div class="footer-content">
+        <p><strong>&copy; Grateful Dead. Todos os direitos reservados.</strong></p>
+        <a href="faq_GD.html"><strong>FAQ</strong></a>
+    </div>
 </footer>
 </html>

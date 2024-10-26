@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Grateful Dead - Home</title>
+    <title>  Grateful Dead - Loja</title>
     <link rel="icon" href="logo header.png">
     <style>
         html, body{
@@ -56,47 +56,54 @@
         }
         body{
             background-color: lightslategrey;
-            color: whitesmoke;
         }
-        h1,h2 body {
-            color: whitesmoke;
-        }
-         
                 /* Área principal que se expande para ocupar o espaço restante */
         main {
             flex: 1; /* Faz o main crescer para ocupar o espaço entre header e footer */
-            padding: 5px;
+            padding: 20px;
             overflow-y: auto; /* Garante rolagem se o conteúdo for maior que a tela */
-        }
-        
-        figure {
-            padding: 5px;
-        }
-        figure :hover{
-            height: 300px;
-            width: 300px;
         }
 
         /* Estilo do rodapé */
+        
         footer {
-            background-color: whitesmoke;
-            color: black;
-            text-align: center;
-            padding: 5px;
-            height: 30px;
-        }
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-content p, .footer-content a {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: red;
+}
     </style>
 </head>
 <header>
-    <img src="logo header.png" height="100" width="100" alt="Logo oficial da banda">
-    <h1>
-        <span style="color: blue;"><strong>Grateful</strong></span> 
-        <span style="color: red;"><strong>Dead</strong></span>
-    </h1>
-        
+
+    <p>
+        <img src="logo header.png" height="100" width="100" alt="Logo oficial da banda">
+         <h1>
+            <span style="color: blue;"><strong>Grateful</strong></span> 
+            <span style="color: red;"><strong>Dead</strong></span>
+         </h1>
+    </p>    
 <div class="content-wrapper">     
  <nav>       
-    <a href="loja_GD.html"> <span style="color: red;"> <strong>Loja</strong></span> </a>
+    <a href="home_GD.html"> <span style="color: red;"> <strong>Home</strong></span> </a>
     <a href="musicas_GD.html"><span style="color: red;"> <strong>Músicas</strong></span></a>
     <a href="sobre_GD.htm"><span style="color: red;"><strong>Sobre</strong></span></a>
  </nav>    
@@ -106,7 +113,7 @@
 <body>
  <main>
     <section>
-    
+
     </section>
 
  </main>   

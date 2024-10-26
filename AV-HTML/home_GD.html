@@ -90,7 +90,7 @@
             margin-bottom: 50px;  
             background-image: url("backgroundForm.jpg");
             background-clip: padding-box; /* Limita o fundo ao conteúdo interno */
-            background-size: 80%; /* Ajusta a imagem para caber no contêiner */ 
+            background-size: 100%; /* Ajusta a imagem para caber no contêiner */ 
         }
         .form-container label{
             display: block;
@@ -113,18 +113,23 @@
         }
         .form-container .terms {
             display: flex;
-            align-items: center;
+            align-items: center; 
             margin-bottom: 15px;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 12px;
             margin-top: 30px;
+            
         }
+        .form-container .terms label,input {
+            align-items: start; 
+        }
+        
 
         /* Estilo específico para o botão */
         .form-container button {
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: red;
             color: white;
             font-size: 16px;
             border: none;
@@ -133,17 +138,34 @@
         }
 
         .form-container button:hover {
-            background-color: #45a049;
+            background-color: blue;
         }
 
         /* Estilo do rodapé */
         footer {
-            background-color: whitesmoke;
-            color: black;
-            text-align: center;
-            padding: 5px;
-            height: 30px;
-        }
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-content p, .footer-content a {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: red;
+}
     </style>
 </head>
 <header>
@@ -167,6 +189,7 @@
     <section id="section1">
     <center><h1>Novos Produtos</h1></center>  
       <div class="content-wrapper">  
+        <!-- Criando link no img src para direcionar pagina de tabela especificaçao do produto -->
              <figure>
                 <a href="boneBranco.html">
                  <img src="boneBranco.png" alt="Boné Branco" height="100" width="100"> 
@@ -236,7 +259,7 @@
            
         </div>
         <div class="terms">
-           <input type="checkbox" id="IdTermos" name="required"/>
+            <input type="checkbox" id="IdTermos" name="required"/>
            <label for="IdTermos">Eu aceito os termos e condições</label>
         </div>
         <button type="submit">Enviar</button>
@@ -246,7 +269,10 @@
 
  </main>   
 </body>
-<footer>
-<p>&copy; 2023 Grateful Dead. Todos os direitos reservados.</p>
+<footer>  
+    <div class="footer-content">
+        <p><strong>&copy; Grateful Dead. Todos os direitos reservados.</strong></p>
+        <a href="faq_GD.html"><strong>FAQ</strong></a>
+    </div>
 </footer>
 </html>
