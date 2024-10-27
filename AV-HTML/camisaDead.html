@@ -3,81 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Grateful Dead - Home</title>
+    <title>Grateful Dead - Home</title>
     <link rel="icon" href="logo header.png">
     <style>
-        html, body{
+        html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             display: flex;
             flex-direction: column;
             font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-
+            background-color: lightslategrey;
+            color: whitesmoke;
         }
+
         header {
             display: flex;
             align-items: center;
             padding: 15px;
-            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            background-color: whitesmoke
-             /* Exemplo de fundo para destaque */
+            background-color: whitesmoke;
         }
 
         header img {
-            margin-right: 15px; /* Espaçamento entre a imagem e o título */
+            margin-right: 15px;
         }
 
         header h1 {
             font-size: 25px;
             margin: 0;
+            color: black;
         }
+
         .content-wrapper {
             display: flex;
             align-items: center;
             flex-grow: 1;
             justify-content: space-between;
         }
-        nav{
+
+        nav {
             display: flex;
             gap: 100px;
             margin-left: 200px;
-            
-        }
-        nav a {
-                text-decoration: none;
-                color: red;
-                font-size: 20px;
-                padding: 5px 10px;
-        }
-            nav a:hover {
-                background-color: blue;
-                border-radius: 5px;
-        }
-        body{
-            background-color: lightslategrey;
-            color: whitesmoke;
-        }
-        h1,h2 body {
-            color: whitesmoke;
-        }
-         
-                /* Área principal que se expande para ocupar o espaço restante */
-        main {
-            flex: 1; /* Faz o main crescer para ocupar o espaço entre header e footer */
-            padding: 5px;
-            overflow-y: auto; /* Garante rolagem se o conteúdo for maior que a tela */
-        }
-        
-        figure {
-            padding: 5px;
-        }
-        figure :hover{
-            height: 300px;
-            width: 300px;
         }
 
-        /* Estilo do rodapé */
+        nav a {
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: blue;
+            border-radius: 5px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #section1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Ajuste para imagem e lista lado a lado */
+        .product-display {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espaçamento entre a imagem e a lista */
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            height: 300px;
+            width: 300px;
+            transition: transform 0.5s ease;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo para a lista de características */
+        #section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #section2 h2 {
+            margin-top: 0;
+            color: whitesmoke;
+        }
+
+        #section2 ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0;
+            color: whitesmoke;
+        }
+
+        #section2 ul li {
+            margin: 5px 0;
+        }
+
+        /* Estilos para a tabela de especificação */
+        #section3 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 10px;
+            width: auto;
+        }
+
+        table, th, td {
+            border: 1px solid whitesmoke;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: blue;
+            color: whitesmoke;
+        }
         footer {
     background-color: whitesmoke;
     color: black;
@@ -104,6 +171,7 @@
 }
     </style>
 </head>
+<body>
 <header>
     <img src="logo header.png" height="100" width="100" alt="Logo oficial da banda">
     <h1>
@@ -111,27 +179,71 @@
         <span style="color: red;"><strong>Dead</strong></span>
     </h1>
         
-<div class="content-wrapper">     
- <nav>       
-    <a href="loja_GD.html"> <span style="color: red;"> <strong>Loja</strong></span> </a>
-    <a href="musicas_GD.html"><span style="color: red;"> <strong>Músicas</strong></span></a>
-    <a href="sobre_GD.htm"><span style="color: red;"><strong>Sobre</strong></span></a>
- </nav>    
+    <div class="content-wrapper">     
+        <nav>       
+            <a href="home_GD.html"><strong>Home</strong></a>
+            <a href="loja_GD.html"><strong>Loja</strong></a>
+            <a href="musicas_GD.html"><strong>Músicas</strong></a>
+            <a href="sobre_GD.html"><strong>Sobre</strong></a>
+        </nav>    
     </div>    
 </header>
 
-<body>
- <main>
-    <section>
-    
-    </section>
+<main>
+    <section id="section1">
+        <h1>Camisa Grateful Dead</h1>  
 
- </main>   
-</body>
+        <!-- Div para imagem e lista lado a lado -->
+        <div class="product-display">
+            <!-- Imagem do Boné -->
+            <figure>
+                    <img src="camisaPretaEstampaDead.png" alt="Camisa Dead">
+                </a>
+            </figure>
+
+            <!-- Lista com características ao lado direito da imagem -->
+            <section id="section2">
+                <h2>Características Principais</h2>
+                <ul>
+                    <li>Cor: Preta</li>
+                    <li>Tamanho: M</li>
+                    <li>Gênero: Feminino</li>
+                </ul>
+            </section>
+        </div> 
+
+        <!-- Tabela centralizada abaixo da imagem e lista -->
+        <section id="section3">
+            <h2>Especificação</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Peso</th>
+                            <th>Tipo</th>
+                            <th>Idade</th>
+                            <th>É kit?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>200 gramas</td>
+                            <td>Camisa com manga</td>
+                            <td>Adulto</td>
+                            <td>Não</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
 <footer>  
     <div class="footer-content">
         <p><strong>&copy; Grateful Dead. Todos os direitos reservados.</strong></p>
         <a href="faq_GD.html"><strong>FAQ</strong></a>
     </div>
 </footer>
+</body>
 </html>
