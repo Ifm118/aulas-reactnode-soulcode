@@ -87,7 +87,7 @@
         border: 3px solid red;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 200px;
+        margin-bottom: 100px;
         background-image: url("backgroundForm.jpg");
         background-clip: padding-box; /* Limita o fundo ao conteúdo interno */
         background-size: 100%; /* Ajusta a imagem para caber no contêiner */
@@ -98,10 +98,10 @@
         margin-bottom: 5px;
       }
       div .GroupNome {
-        margin-top: 50px;
+        margin-top: 30px;
       }
       div .GroupMensagem {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
       .form-container input,
       .form-container textarea {
@@ -118,13 +118,10 @@
         margin-bottom: 15px;
         font-weight: normal;
         font-size: 12px;
-        margin-top: 30px;
+        margin-top: 60px;
+    
       }
-      .form-container .terms label,
-      input {
-        align-items: start;
-      }
-
+     
       /* Estilo específico para o botão */
       .form-container button {
         width: 100%;
@@ -195,10 +192,7 @@
   </head>
   <header>
     <img
-      src="logo header.png"
-      height="100"
-      width="100"
-      alt="Logo oficial da banda"
+      src="logo header.png" height="100" width="100" alt="Logo oficial da banda"
     />
     <h1>
       <span style="color: blue"><strong>Grateful</strong></span>
@@ -336,8 +330,10 @@
               ></textarea>
             </div>
             <div class="terms">
-              <input type="checkbox" id="IdTermos" name="required" />
-              <label for="IdTermos">Eu aceito os termos e condições</label>
+                <label for="IdTermos">
+                  <input type="checkbox" id="IdTermos" name="required" />
+                  Eu aceito os termos e condições
+                </label>
             </div>
             <button type="submit">Enviar</button>
           </form>
