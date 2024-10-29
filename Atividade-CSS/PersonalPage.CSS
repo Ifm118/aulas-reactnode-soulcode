@@ -1,0 +1,74 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.style-header, .footer {
+    background-color: deepskyblue; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    padding: 20px;
+    width: 100%;
+}
+
+#style-title-page {
+    color: firebrick; /* Cor do título */
+}
+
+.style-hobbies-list {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0;
+}
+
+.first-hobby-item {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.second-hobby-item {
+    color: red;
+    transition: color 0.5s;
+}
+
+.third-hobby-item {
+    color: darkgreen;
+    transition: color 0.5s;
+}
+
+.fourth-hobby-item {
+    color: darkviolet;
+    transition: color 0.5s;
+}
+
+.first-hobby-item:hover {
+    color: red;
+}
+
+.second-hobby-item:hover {
+    color: blue;
+}
+
+.third-hobby-item:hover {
+    color: darkviolet;
+}
+
+.fourth-hobby-item:hover {
+    color: darkgreen;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer:hover {
+    border: 5px solid goldenrod; /* Borda ao passar o mouse */
+}
+
+a {
+    color: yellow; /* Cor do link */
+}
+
+a:visited {
+    color:red; /* Cor do link visitado */
+}
