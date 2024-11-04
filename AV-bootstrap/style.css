@@ -1,0 +1,132 @@
+.carousel-inner img {
+    height:25rem;  
+    /* Defina a altura desejada */
+    object-fit:fill; 
+}
+
+.bodystyle{
+    background-color: rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: max-width 0.3s ease;
+}
+
+.card-img-top {
+    width: 100%;                           /* Ocupa toda a largura do card */
+    height: 150px;                          /* Define uma altura fixa para "congelar" a imagem */
+    object-fit: cover;                      /* Ajusta a imagem para preencher o contêiner */
+    transition: height 0.3s ease;           /* Suaviza a transição da altura */
+}
+
+.card-body, .card-footer {
+    padding: 0.75rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-footer {
+    background-color: rgb(187, 229, 255);
+    font-weight: 600;
+}
+
+/* Estilos para diferentes tamanhos de tela */
+
+/* Telas pequenas (Mobile-first) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        flex: 1 1 calc(100% - 1rem);
+    }
+    .card-img-top {
+        height: 200px;                      /* Mantém a altura pequena da imagem */
+    }
+}
+
+/* Telas médias (Tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: 48%;
+    }
+    .card-img-top {
+        height: 500px;                      /* Mantém a altura constante para tablets */
+    }
+}
+
+/* Telas grandes (Desktop) */
+@media (min-width: 992px) {
+    .card {
+        flex: 1 1 calc(33.33% - 1rem);
+        max-width: 30%;
+    }
+    .card-img-top {
+        height: 800px;                      /* Mantém a altura fixa da imagem em desktops */
+    }
+}
+
+
+#buttonContainer {
+    height: 15.6rem;
+    background-color: rgb(151, 149, 149);
+    display: flex;               
+    justify-content: center;      
+    align-items: center;          
+    gap: 1rem;                   
+}
+
+.btn-primary {
+    margin: 0;                    /* Remove as margens para garantir o alinhamento central */
+    padding: 0.5rem 1rem;         /* Ajusta o espaçamento interno dos botões */
+    text-align: center;
+}
+.nav-footer {
+    display: flex;
+    justify-content: space-around;   /* Distribui os elementos nas extremidades */
+    align-items: flex-start;          /* Alinha ao topo */
+    padding: 1rem;
+    position: relative;
+}
+
+.nav-logo {
+    align-self: flex-start;           /* Alinha a imagem ao topo da esquerda */
+    height: 4.25rem;
+}
+
+.nav-list-footer {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;           /* Configura a lista em coluna */
+    gap: 0.5rem;                      /* Espaçamento entre os itens da lista */
+    align-items: flex-end;            /* Alinha a lista à direita */
+    margin: 0;
+    padding: 0;
+}
+
+#title-nav-footer {
+    align-self: flex-end;             /* Alinha o título na base do footer */
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(38, 58, 82);
+    position: absolute;
+    bottom: 0.5rem;                   /* Ajusta o título próximo à base */
+    left: 50%;
+    transform: translateX(-50%);      /* Centraliza horizontalmente */
+}
