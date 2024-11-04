@@ -1,9 +1,36 @@
 .carousel-inner img {
-    height:25rem;  
-    /* Defina a altura desejada */
-    object-fit:fill; 
+    height: 600px;
+    object-fit: cover;      /* Corta a imagem para preencher a altura e largura */
+    width: 100%;
+    transition: height 1.5s ease;                       /* Garante que a imagem ocupe toda a largura */
 }
 
+/* Telas pequenas (Mobile-first) */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 200px;             /* Mantém altura fixa em 200px para telas pequenas */
+        object-fit: cover;         /* Corta a imagem se necessário para preencher o espaço */
+        width: 100%;               /* Garante que a imagem ocupe toda a largura */
+    }
+}
+
+/* Telas médias (Tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .carousel-inner img {
+        height: 200px;             /* Altura fixa em 200px para tablets */
+        object-fit: cover;         /* Mantém o preenchimento da imagem */
+        width: 100%;               /* Preenche a largura do carousel */
+    }
+}
+
+/* Telas grandes (Desktop) */
+@media (min-width: 992px) {
+    .carousel-inner img {
+        height: 200px;             /* Altura fixa em 200px para desktops */
+        object-fit: cover;         /* Adapta a imagem ao espaço sem distorção */
+        width: 100%;               /* Largura máxima para preencher o carousel */
+    }
+}
 .bodystyle{
     background-color: rgb(228, 228, 228);
     font-family: Arial, Helvetica, sans-serif;
@@ -29,13 +56,13 @@
 
 .card-img-top {
     width: 100%;                           /* Ocupa toda a largura do card */
-    height: 150px;                          /* Define uma altura fixa para "congelar" a imagem */
+    height: 350px;                          /* Define uma altura fixa para "congelar" a imagem */
     object-fit: cover;                      /* Ajusta a imagem para preencher o contêiner */
-    transition: height 0.3s ease;           /* Suaviza a transição da altura */
+    transition: height 1.5s ease;           /* Suaviza a transição da altura */
 }
 
 .card-body, .card-footer {
-    padding: 0.75rem;
+    padding: 2.75rem;
 }
 
 .card-title {
@@ -64,10 +91,10 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .card {
         flex: 1 1 calc(50% - 1rem);
-        max-width: 48%;
+        max-width: 100%;
     }
     .card-img-top {
-        height: 500px;                      /* Mantém a altura constante para tablets */
+        height: 200px;                      /* Mantém a altura constante para tablets */
     }
 }
 
@@ -75,10 +102,10 @@
 @media (min-width: 992px) {
     .card {
         flex: 1 1 calc(33.33% - 1rem);
-        max-width: 30%;
+        max-width: 100%;
     }
     .card-img-top {
-        height: 800px;                      /* Mantém a altura fixa da imagem em desktops */
+        height: 200px;                      /* Mantém a altura fixa da imagem em desktops */
     }
 }
 
