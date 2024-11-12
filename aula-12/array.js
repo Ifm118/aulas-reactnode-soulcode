@@ -37,3 +37,20 @@ console.log("*****************************")
 for(let nome of nomes) {
     console.log("Bem-vindo(a)", nome);
 }
+
+
+console.log("*****************************")
+
+const frutas = ["maça", "Laranja", "Morango", "Limão", "pera", "Cajarana"];
+
+
+frutas.push("Ciriguela");
+frutas.pop();
+console.log(frutas);
+console.log(frutas.includes("Caju"));
+console.log(frutas.includes("Maça"));
+console.log(frutas.indexOf("Limão"));
+console.log(frutas.indexOf("Goiaba"));
+
+frutas.splice(2, 1);
+console.log(frutas);
