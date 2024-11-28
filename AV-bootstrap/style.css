@@ -26,8 +26,8 @@
 /* Telas grandes (Desktop) */
 @media (min-width: 992px) {
     .carousel-inner img {
-        height: 200px;             /* Altura fixa em 200px para desktops */
-        object-fit: cover;         /* Adapta a imagem ao espaço sem distorção */
+        height: 300px;             /* Altura fixa em 200px para desktops */
+        object-fit:scale-down;         /* Adapta a imagem ao espaço sem distorção */
         width: 100%;               /* Largura máxima para preencher o carousel */
     }
 }
